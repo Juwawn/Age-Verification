@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Age Verification</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="row text-center">
+                <h1 class="mt-1">Age Verifier</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="main" id="main">
+        <section class="section" id="section">
+            <div class="container" id="container">
+                <div class="div row d-flex justify-content-center" id="formRow">
+                    <div class="col-md-6">
+                            <h2 class="subheading" id="subheading">
+
+                            </h2>
+                            <form action="#">
+                                <label for="dateInput" class="text" name="date" id="dateLabel">
+                                    Enter your date of birth:
+                                </label>
+                                <input type="date" name="date" id="dateInput" value="" class="date-bar mt-5" required>
+                                <label for="checkbox" class="text" name="checkbox" id="checkboxLabel">
+                                    I verify that the information is true and punishable by law if false
+                                </label>
+                                <input type="checkbox" id="checkbox" name="checkbox" value="" required>
+                                <input type="submit" name="submit" id="submit" value="verify your age" onclick="validate();return false">
+                            </form>
+                            <p class="text" id="message"></p>
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer" id="footer">
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
